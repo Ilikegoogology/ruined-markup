@@ -432,7 +432,7 @@ function loop(unadjusted, off = 0) {
     if (!(game.advAutoShift==1&&game.factorShifts==5&&inChal(8))) factorShift();
     game.cAutoLoop.shift %= 1;
   }
-  game.cAutoLoop.boost +=
+  game.cAutoLoop.boost +=l
     game.leastBoost <= 18 && game.cAutoOn.boost === 1
       ? (ms / 1000) * game.boostAuto.toNumber()
       : 0;
@@ -531,7 +531,7 @@ function render() {
   game.canInf =
     game.ord >= game.base ** 3 ||
     outSize >=
-      (game.leastBoost <= 22 ? (game.leastBoost <= 1.5 ? 10 : 100) : 10240) ||
+      (game.leastBoost <= 22 ? (game.leastBoost <= 1.5 ? 10 : 100) : 124) ||
     outSize >= Infinity;
   let ordLevel=Number(getPsi(game.ord))
   if (ordLevel > game.bestPsi && ordLevel != 1) {
