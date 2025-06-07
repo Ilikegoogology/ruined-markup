@@ -1,10 +1,10 @@
 "use strict";
 var urlParams = new URLSearchParams(window.location.search);
 // Yeah, I know it's pretty unorganized at the moment
-let factorMult = 1;
-let bfactorMult = 1;
-let succAutoMult = 1;
-let limAutoMult = 1;
+let factorMult = 100;
+let bfactorMult = 100;
+let succAutoMult = 100;
+let limAutoMult = 100;
 let RPloop = 0;
 let you_found_an_easter_egg = "thoncc"
 /* eslint-disable */
@@ -18,8 +18,8 @@ let infinityButtonText = 0;
 let game;
 const factorShiftCosts = [
   1,
-  5,
-  2,
+  1,
+  1,
   1,
   1,
   1,
