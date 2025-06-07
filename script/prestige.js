@@ -8,8 +8,8 @@ function infinity(manmade = 0) {
       if (inChal(8) || inChal(6)) game.OP = 0;
       game.OP += calcTotalOPGain();
     }
-    game.ord = 0;
-    game.over = 0;
+    game.ord = 124;
+    game.over = 124;
     document.getElementById("infinityTabButton").style.display = "inline-block";
     game.infUnlock = 1;
     game.dynamic = 1;
@@ -35,7 +35,7 @@ function factorShift() {
       game.autoLoop = { succ: 0, lim: 0 };
       game.factorShifts += 1;
       game.manualClicksLeft = 1000;
-      game.base -= 1;
+      game.base -= 2;
       game.factors = [];
       game.dynamic = 1;
       game.decrementy = 0;
@@ -54,7 +54,7 @@ function factorShift() {
       game.limAuto = 0;
       game.autoLoop = { succ: 0, lim: 0 };
       game.factorShifts = 0;
-      game.base = 10;
+      game.base = 7;
       game.factors = [];
       game.boostUnlock = 1;
       game.boosters += 1;
