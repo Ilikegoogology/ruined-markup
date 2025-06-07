@@ -8,8 +8,8 @@ function infinity(manmade = 0) {
       if (inChal(8) || inChal(6)) game.OP = 0;
       game.OP += calcTotalOPGain();
     }
-    game.ord = 124;
-    game.over = 124;
+    game.ord = 1244;
+    game.over = 1244;
     document.getElementById("infinityTabButton").style.display = "inline-block";
     game.infUnlock = 1;
     game.dynamic = 1;
