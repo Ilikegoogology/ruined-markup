@@ -17,22 +17,22 @@ let clickCoolDown = 0;
 let infinityButtonText = 0;
 let game;
 const factorShiftCosts = [
-  100,
-  500,
-  2000,
-  10000,
-  1e10,
-  1e20,
-  1e32,
-  1.095e272,
+  1,
+  5,
+  2,
+  1,
+  1,
+  1,
+  1,
+  1,
   Infinity
 ];
-const factorCostExp = [2, 1.5, 1.5, 1.5, 1.4, 1.5, 1.6, 100];
+const factorCostExp = [2, 1.5, 1.5, 1.5, 1.4, 1.5, 1.6, 1.7];
 const bupUpgradeCosts = [
-  1,1,1,10,
-  5,2,2,21,
-  72,73,8,66,
-  53,30,30,324,
+  1,1,1,2,
+  1,1,1,2,
+  72,73,8,11,
+  53,30,30,34,
   Infinity,Infinity,6e6,1e7,
   Infinity,Infinity,2e14,1e16
 ];
