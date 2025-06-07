@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 var urlParams = new URLSearchParams(window.location.search);
 // Yeah, I know it's pretty unorganized at the moment
 let factorMult = 100;
@@ -585,9 +585,9 @@ function render() {
       get("infinityButton2").innerHTML = `+${infinityButtonText}`;
   } else {
     get("infinityButton").innerHTML =
-      `Reach ${(game.leastBoost <= 22 ? (game.leastBoost <= 1.5 ? 10 : 100) : 10240)} to Markup`;
+      `Reach ${(game.leastBoost <= 22 ? (game.leastBoost <= 1.5 ? 10 : 100) : 124)} to Markup`;
     get("infinityButton2").innerHTML =
-      `Reach ${(game.leastBoost <= 22 ? (game.leastBoost <= 1.5 ? 10 : 100) : 10240)} to Markup`;
+      `Reach ${(game.leastBoost <= 22 ? (game.leastBoost <= 1.5 ? 10 : 100) : 124)} to Markup`;
   }
   get("challengeSubTab").style.display = game.upgrades.includes(4)
     ? "inline-block"
@@ -609,8 +609,8 @@ function render() {
       : beautify(game.limAuto * totalMult * limAutoMult))} times per second`;
   get("buysucc").innerHTML =
     `Buy Successor Autobuyer for ${(inChal(1)? game.succAuto === 1
-        ? "Infinity"
-        : "1.000e6"
+        ? "1e2"
+        : "1e1"
       : beautify(
           Math.min(1e260 + game.succAuto, 100 * (2 ** game.succAuto))
         ))} OP`;
@@ -618,8 +618,8 @@ function render() {
     "Buy Maximize Autobuyer for " +
     (inChal(1)
       ? game.limAuto === 1
-        ? "Infinity"
-        : "1.000e6"
+        ? "1e2"
+        : "1e1"
       : beautify(Math.min(10 ** 260 + game.limAuto, 100 * 2 ** game.limAuto))) +
     "  OP";
   get("factorShift").innerHTML =
