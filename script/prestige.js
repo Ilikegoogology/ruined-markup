@@ -3,7 +3,7 @@
 function infinity(manmade = 0) {
   if (game.canInf) {
     if (calcOrdPoints(game.ord, game.base, game.over) >= 1e265) {
-      game.OP = Math.max(game.OP, calcOrdPoints(game.ord, game.base, game.over));
+      game.OP = Math.max(game.OP, calcOrdPoints(game.ord*4, game.base, game.over));
     } else {
       if (inChal(8) || inChal(6)) game.OP = 0;
       game.OP += calcTotalOPGain();
